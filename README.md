@@ -30,9 +30,13 @@
 
 
 
-usage:
-1、go build -o main main.go
+# 使用方法
 
-2、./main
+1、把从fofa扫出来的derp相关文本以json格式保存
 
-3、upload file
+2、需要对原数据进行一点处理，最外层增加一个 "[]"，每条数据后增加","，以确保是一个json数组
+
+3、./main
+
+4、localhost:8080处上传处理后的json文件即可
+
